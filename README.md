@@ -1,11 +1,9 @@
-# barefootnetworks
-my contribution towards barefoot
+•	udpServer.py
+•	udp_query.py
 
-#to run scripts for lucy server, open three terminals
-	ssh to lucy
-	python udpServer.py(terminal 1)
-	python udp_query.py(terminal 2)
-	curl -d '' -H "Content-Type: application/json" -X POST
-		http://... (terminal 3)
+ssh lucy server:
 
+-	Start running udpServer.py
+-	Start running udp_query.py (flask application)
 
+Query: curl -d '' -H "Content-Type: application/json" -X POST http://... (terminal 3)
