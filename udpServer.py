@@ -11,7 +11,6 @@ from bson.json_util import dumps
 import socket
 
 def begin():
-    app = Flask(__name__)
     UDP_IP = "10.201.208.90"
     UDP_PORT = 8086
 
@@ -28,7 +27,7 @@ def begin():
         print ("Could not connect to MongoDB: %s") % e
     conn
 #create a database
-    db = conn.udp_test_db
+    db = conn.udp_reports
 #create a collection
     collection = db.udp_collection
     now_time = int(time.time())
